@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+$LOAD_PATH << File.expand_path('../../lib', __FILE__)
+
+require 'namecheap_zone_importer'
+NamecheapZoneImporter.from_command_line(ARGV).import!
